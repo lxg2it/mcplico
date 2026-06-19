@@ -1,0 +1,25 @@
+{
+  "name": "mcplico",
+  "version": "0.1.0",
+  "description": "MCPico — MCP proxy that bundles flat tool lists into hierarchical subcommand groups. Pico footprint, maximum discovery.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcplico": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["mcp", "proxy", "tools", "context", "hierarchical", "subcommand"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
